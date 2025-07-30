@@ -1,27 +1,29 @@
+@import '../_common//sass/mixins.scss';
+
 .container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    @include flex-center;
+    flex-direction: column;
+    flex-grow: 1;
     background: linear-gradient(135deg, #ece9f7 0%, #cfd9df 100%);
   }
   
   .card {
-    background: #fff;
+    background: var(--color-white);
     padding: 2.5rem 2rem;
-    border-radius: 1.25rem;
+    border-radius: 2rem;
     box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
-    min-width: 320px;
+    min-width: 32rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
   }
   
   .title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #3a3a5a;
-    margin-bottom: 0.5rem;
+    color: var(--color-dark-blue);
+    margin-bottom: 1rem;
   }
   

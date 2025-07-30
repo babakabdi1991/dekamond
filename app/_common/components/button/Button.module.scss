@@ -1,6 +1,6 @@
 .button {
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
@@ -14,46 +14,46 @@
 
 // Variants
 .primary {
-  background: linear-gradient(90deg, #7c3aed 0%, #6366f1 100%);
-  color: #fff;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-light-primary) 100%);
+  color: var(--color-white);
   
   &:hover:not(:disabled) {
-    background: linear-gradient(90deg, #6366f1 0%, #7c3aed 100%);
+    background: linear-gradient(90deg, var(--color-light-primary) 0%, var(--color-primary) 100%);
   }
 }
 
 .secondary {
-  background: #f3f4f6;
-  color: #374151;
+  background:var(--color-background);
+  color: var(--color-light-dark);
   
   &:hover:not(:disabled) {
-    background: #e5e7eb;
+    background: var(--color-secondary);
   }
 }
 
 .outline {
   background: transparent;
-  color: #7c3aed;
-  border: 2px solid #7c3aed;
+  color:var(--color-primary);
+  border: 2px solid var(--color-primary);
   
   &:hover:not(:disabled) {
-    background: #7c3aed;
-    color: #fff;
+    background:var(--color-primary);
+    color: var(--color-white);
   }
 }
 
 // Sizes
 .small {
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
 }
 
 .medium {
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
+  padding: 1rem 1.6rem;
+  font-size: 1.6rem;
 }
 
 .large {
-  padding: 1rem 1.5rem;
-  font-size: 1.125rem;
+  padding: 1.2rem 2rem;
+  font-size: 2rem;
 } 
