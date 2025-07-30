@@ -1,0 +1,27 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ece9f7 0%, #cfd9df 100%);
+  }
+  
+  .card {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3a3a5a;
+    margin-bottom: 0.5rem;
+  }
+  
